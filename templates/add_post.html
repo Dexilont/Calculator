@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Добавить пост</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class = "Flashed">
+            {% for mesagge in messages %}
+            <li> {{ messages}} </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+    <form method = "post">
+        <label for = "title">Название</label><br><br>
+        <input type = "text" id = "title" name = "title"><br>
+        <label for = "content">Текст статьи</label><br>
+        <textarea id = "content" name = "content"></textarea><br>
+        <input type="submit" value="Подтвердить">    
+    </form>
+
+{% endblock %}

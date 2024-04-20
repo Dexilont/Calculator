@@ -1,0 +1,13 @@
+html{
+    background-color: yellow;
+}
+h1{
+    color: purple;
+}
+p{
+    color: palevioletred;
+}
+.style1{
+    margin-bottom: -15px;
+    font-family: "Arial";
+}
